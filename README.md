@@ -1,0 +1,1 @@
+This repository showcases an uncommon bug related to manipulating the innerHTML property in HTML.  The bug.html file demonstrates the problem, leading to performance degradation and potential unexpected behavior when repeatedly appending to the innerHTML of an element. The solution.html file offers a more efficient solution using document fragments.
