@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Efficient way to append content using DocumentFragment
+    let fragment = document.createDocumentFragment();
+    let newParagraph = document.createElement('p');
+    newParagraph.textContent = 'Added paragraph.';
+    fragment.appendChild(newParagraph);
+    document.getElementById('myDiv').appendChild(fragment);
+  </script>
+</body>
+</html>
